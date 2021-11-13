@@ -111,7 +111,7 @@
             <td><?php echo $i;?></td>
             <td><?php echo $row["id"];?></td>
             <td>
-              <a href="ubah.php?id=<?php echo $row["id"];?>">uabh</a>
+              <a href="ubah.php?id=<?php echo $row["id"];?>">ubah</a>
               <a href="hapus.php?id=<?php echo $row["id"];?>" onclick="return confirm('yakin?')">hapus</a>
             </td>
             <td><?php echo $row["namaberita"];?></td>
@@ -131,10 +131,10 @@
       <?php endfor; ?>
 
      <!--footer-->
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom footer">
       <div class="text-white">
         <p class="text-center">
-          Created with Love By <a href="https://www.instagram.com/dendiriki123" class="text-white fw-bold"> Dendi riki rahmawan <br /><br /></a>
+          Created with Love By <a href="https://www.instagram.com/dendiriki123/" class="text-white fw-bold"> Dendi riki rahmawan <br /><br /></a>
         </p>
       </div>
     </footer >
