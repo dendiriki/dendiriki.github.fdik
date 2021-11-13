@@ -131,14 +131,7 @@
       <?php endfor; ?>
 
      <!--footer-->
-    <footer class="fixed-bottom footer">
-      <div class="text-white">
-        <p class="text-center">
-          Created with Love By <a href="https://www.instagram.com/dendiriki123/" class="text-white fw-bold"> Dendi riki rahmawan <br /><br /></a>
-        </p>
-      </div>
-    </footer >
-    <!--akir footer-->
+    
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
