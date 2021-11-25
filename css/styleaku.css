@@ -70,17 +70,17 @@
   color: #111;
 }
 
-.hitam {
-  background-color: black;
+.ungu {
+  background-color: #8601af;
 }
 
-.hitams {
-  background: rgba(0, 0, 0, 0.1);
+.ungus {
+  background: rgba(#8601af, 0.1);
 }
 
 .navbar {
   height: 80px;
-  background-color: #111;
+  background-color: #8601af;
   border: none;
   color: white;
   z-index: 100;
