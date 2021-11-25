@@ -71,18 +71,30 @@
 }
 
 .ungu {
-  background-color: #8601af;
+  background-color: #924324;
 }
 
 .ungus {
-  background: rgba(#8601af, 0.1);
+  background: rgba(#924324, 0.1);
 }
 
 .navbar {
   height: 80px;
-  background-color: #8601af;
+  background-color: #924324;
   border: none;
   color: white;
   z-index: 100;
   transition: background-color 1s ease 0s;
+}
+
+.navbar-tengah {
+  position: absolute;
+  left: 58%;
+  display: block;
+  text-align: center;
+}
+
+.navbar>.container .navbar-tengah,
+.navbar>.container-fluid .navbar-tengah {
+  margin-left: -80px;
 }
