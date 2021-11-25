@@ -11,7 +11,7 @@
 /* Global Body Style */
 body {
   color: #fff;
-  background: #111111;
+  background: #fd5308;
   font-family: "Roboto", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
-  color: orange;
+  color: white;
 }
 
 h1,
@@ -105,21 +105,22 @@ button:focus {
 /* Themefisher Button effect */
 .btn-main {
   border-radius: 0;
-  background: orange;
-  border-color: orange;
+  background: #8601af;
+  border-color: black;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   padding: 11px 18px;
   transition: 0.5s;
+  color: white;
 }
 
 .btn-main:hover,
 .btn-main:focus {
-  color: #111111;
+  color: white;
   border-color: transparent;
-  background: #fff;
+  background: #fe2712;
 }
 
 /**/
@@ -168,7 +169,7 @@ html.fp-enabled {
 
 .solid-btn:hover {
   background: transparent;
-  color: orange;
+  color: white;
 }
 
 .post-count {
@@ -199,7 +200,7 @@ html.fp-enabled {
 
 .tf-search-btn:hover {
   background: transparent;
-  color: orange;
+  color: white;
   border-color: transparent;
 }
 
@@ -612,7 +613,7 @@ div.loading {
  */
 .footer {
   padding: 65px 0 40px;
-  background: #111111;
+  background: #fd5308;
   font-size: 16px;
   line-height: 29px;
   color: rgba(255, 255, 255, 0.8);
@@ -728,7 +729,7 @@ div.loading {
 ***********************************************/
 .case-study {
   padding-top: 80px;
-  background: #171717;
+  background: #f7800c;
 }
 
 .case-study .content h4 {
@@ -736,13 +737,13 @@ div.loading {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  color: orange;
+  color: white;
   font-weight: bold;
 }
 
 .case-study .content p {
   font-size: 16px;
-  color: rgba(175, 175, 175, 0.8);
+  color: white;
 }
 
 .case-study .content .btn {
@@ -771,7 +772,7 @@ div.loading {
 .case-study-content:nth-child(odd) {
   padding-top: 100px;
   padding-bottom: 180px;
-  background: #121212;
+  background: #fb9902;
 }
 
 /**********************************************
@@ -855,7 +856,7 @@ div.loading {
 
 .hero-video:before {
   content: "";
-  background: rgba(0, 0, 0, 0.67);
+  background: rgba(0, 0, 0, 0.32);
   position: absolute;
   right: 0;
   left: 0;
@@ -1081,11 +1082,11 @@ div.loading {
 .th-btn-border {
   background: transparent;
   border-color: rgba(62, 62, 62, 0.5);
-  color: #afafaf;
+  color: white;
 }
 
 .th-btn-border:hover {
-  color: #111111 !important;
+  color: white !important;
 }
 
 .pricing-title,
@@ -1114,7 +1115,7 @@ hr.hr-border {
 .table:hover .features-list i,
 .table:hover .th-btn-border,
 .table:hover .price {
-  color: orange;
+  color: white;
 }
 
 .table:hover .table-price {
