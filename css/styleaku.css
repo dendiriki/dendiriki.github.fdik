@@ -94,9 +94,9 @@
   text-align: center;
 }
 
-.navbar>.container .navbar-tengah,
-.navbar>.container-fluid .navbar-tengah {
-  margin-left: -80px;
+.navbar > .container .navbar-tengah,
+.navbar > .container-fluid .navbar-tengah {
+  margin-left: -6%;
 }
 
 .sub-judul {
