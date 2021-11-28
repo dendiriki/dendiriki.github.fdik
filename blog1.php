@@ -91,7 +91,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">Berita & Artikel</h1>
+        <h1 class="text-center warna" >Berita & Artikel</h1>
       </div>
     </div>
   </div>
@@ -109,7 +109,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="index.html">
+      <a class="navbar-brand logo" >
+        <img src="images/fff.png" alt="">
+      </a>
+      <a class="navbar-brand navbar-tengah logo" >
         <img src="images/logo-dinamika1.png" alt="">
       </a>
     </div>
@@ -119,8 +122,8 @@
       <ul class="nav navbar-nav navbar-right menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="profil.html">profil</a></li>
-        <li><a href="#" class="btn-warning dropdown hitams dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Prodi</a>
-          <ul class="dropdown-menu hitam" aria-labelledby="dropdownMenu1">
+        <li><a href="#" class="dropdown cklts dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Prodi</a>
+          <ul class="dropdown-menu cklt" aria-labelledby="dropdownMenu1">
             <li><a href="s1dkv.html">S1 DESAIN KOMUNIKASI VISUAL</a></li>
             <li><a href="s1dp.html">S1 DESAIN PRODUK</a></li>
             <li><a href="divpfdt.html">DIV PRODUKSI FILM DAN TELEVISI</a></li>
@@ -133,7 +136,7 @@
   
   <!-- Blog Sections 
   =========================-->
-  <section class="blog">
+  <section class="case-study">
     <div class="container">
       <div class="row">
         <div class="title text-center">
@@ -161,7 +164,7 @@
                 </div>
                 <div class="blog-content">
                   <a href="blog-single1.html"><h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?> </h4></a>
-                  <div class="meta">
+                  <div class="sub-judul">
                     <div class="date">
                       <p><?php echo $row ["tanggal"] ?></p>
                     </div>
@@ -189,7 +192,7 @@
                 </div>
                 <div class="blog-content">
                   <a href="blog-single2.html"><h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?></h4></a>
-                  <div class="meta">
+                  <div class="sub-judul">
                     <div class="date">
                       <p><?php echo $row ["tanggal"] ?></p>
                     </div>
