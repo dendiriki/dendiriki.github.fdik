@@ -88,10 +88,12 @@
 
 
 <section class="page-header services-header" data-parallax="scroll" data-image-src="images/berita.jpg">
-  <div class="container">
+  <div class="container ">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center warna" >Berita & Artikel</h1>
+        
+        <h1 id="cobawarna" >Berita & Artikel</h1>
+        
       </div>
     </div>
   </div>

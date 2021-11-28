@@ -123,6 +123,8 @@
   border: 0;
 }
 
-.warna h1 {
+#cobawarna {
+  text-align: center;
+  font-size: 100px;
   color: #fb9902;
 }
