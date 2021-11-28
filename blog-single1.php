@@ -36,6 +36,7 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
 
     <!-- Revolution Slider -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleaku.css">
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -81,7 +82,7 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1 class="text-center">Our Blogs. <br> We Ensure Quality Design.</h1>
+        <h1 class="text-center">Berita & Artikel</h1>
       </div>
     </div>
   </div>
@@ -90,7 +91,7 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
 
  <!-- Navigation -section
   =========================-->
-<nav class="navbar navbar-fixed-top navigation" >
+  <nav class="navbar navbar-fixed-top navigation" >
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -100,16 +101,25 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" href="index.html">
+      <a class="navbar-brand logo" >
+        <img src="images/fff.png" alt="">
+      </a>
+      <a class="navbar-brand navbar-tengah logo" >
         <img src="images/logo-dinamika1.png" alt="">
       </a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <div class="collapse navbar-collapse navbar-ex1-collapse ">
       <ul class="nav navbar-nav navbar-right menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="profil.html">profil</a></li>
+        <li><a href="#" class="dropdown cklts dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">Prodi</a>
+          <ul class="dropdown-menu cklt" aria-labelledby="dropdownMenu1">
+            <li><a href="s1dkv.html">S1 DESAIN KOMUNIKASI VISUAL</a></li>
+            <li><a href="s1dp.html">S1 DESAIN PRODUK</a></li>
+            <li><a href="divpfdt.html">DIV PRODUKSI FILM DAN TELEVISI</a></li>
+        </ul></li>
         <li><a href="blog1.php">Berita & Artikel</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -120,7 +130,7 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
   =========================-->
 
   
-  <section class="blog-single">
+  <section class="case-study">
   	<div class="container">
   		<div class="row">
       <?php $i=1; ?>

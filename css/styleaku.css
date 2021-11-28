@@ -70,19 +70,59 @@
   color: #111;
 }
 
-.ungu {
-  background-color: #8601af;
+.cklt {
+  background-color: #924324;
 }
 
-.ungus {
-  background: rgba(#8601af, 0.1);
+.cklts {
+  background: rgba(#924324, 0.1);
 }
 
 .navbar {
   height: 80px;
-  background-color: #8601af;
+  background-color: #924324;
   border: none;
   color: white;
   z-index: 100;
   transition: background-color 1s ease 0s;
+}
+
+.navbar-tengah {
+  position: absolute;
+  left: 58%;
+  display: block;
+  text-align: center;
+}
+
+.navbar>.container .navbar-tengah,
+.navbar>.container-fluid .navbar-tengah {
+  margin-left: -80px;
+}
+
+.sub-judul {
+  padding-bottom: 20px;
+}
+
+.sub-judul p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+  color: #fefe33;
+}
+
+.sub-judul div {
+  padding-right: 10px;
+  margin-right: 7px;
+  border-right: 1px solid #fb9902;
+  display: inline-block;
+}
+
+.sub-judul div:last-child {
+  padding-right: 0;
+  margin-right: 0;
+  border: 0;
+}
+
+.warna h1 {
+  color: #fb9902;
 }
