@@ -130,13 +130,12 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
   =========================-->
 
   
-  <section class="case-study">
+  <section class=" case-study">
   	<div class="container">
   		<div class="row">
       <?php $i=1; ?>
       <?php foreach($databerita as $row): ?>
-        <input type="hidden" name="id" value="<?php echo $databerita["id"]?>">
-        <input type="hidden" name="gambarlama" value="<?php echo $databerita["gambar"]?>">
+      
         <div class="title text-center">
           <h2><?php echo $row ["namaberita"]; ?></h2>
         </div>
