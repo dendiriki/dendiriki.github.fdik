@@ -102,7 +102,7 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand logo" >
-        <img src="images/fff.png" alt="">
+        <img src="images/cobalogo.png" alt="">
       </a>
       <a class="navbar-brand navbar-tengah logo" >
         <img src="images/logo-dinamika1.png" alt="">
@@ -160,16 +160,20 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
                     <p><?php echo $row ["penulis"]; ?></p>
                   </div>
                 </div>
-             
+              
               <div class="blog-content-description">
 
-                <p class="blog-description"><?php echo $row ["isiberita"]; ?></p>
+                <p class="blog-description" ><?php echo $row ["isiberita"]; ?></p>
+             
               </div>
-              
 
               <?php $i++; ?>
               <?php endforeach; ?>
-          
+
+
+            <div id='editor'>
+
+            </div>
             <!-- Single Blog Page Form
             ================================== -->
             <!-- <div class="blog-single-form">
@@ -369,6 +373,24 @@ $databerita = query("SELECT * FROM databerita WHERE id = $id");
             </div>
         </div>
     </footer>
+
+    
+
+    <script>
+    DecoupledEditor
+        .create( document.querySelector( '#editor' ) )
+        .then( editor => {
+            const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+            toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+        } )
+        .catch( error => {
+            console.error( error );
+        } );
+    </script>
+
+
+<script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
 
 
 

@@ -28,10 +28,12 @@
 	</div>
     
     <br>
- 
+
+ 	<div id="editor">
 	<div class="form-group">
 		<label for="isiberita">IsiBerita</label>
 		<textarea class="form-control" id="isiberita" rows="3" placeholder="Contoh textarea .."></textarea>
+	</div>
 	</div>
     <br>
     <div class="form-group">
@@ -43,5 +45,21 @@
 	<button type="submit" class="btn btn-primary">Submit</button>
 </form>
     
+
+
+
+	<script src="editor/ckeditor.js"></script>
+    <script src="editor/ckeditor.js.map"></script>
+
+    <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+    </script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+   
 </body>
 </html>

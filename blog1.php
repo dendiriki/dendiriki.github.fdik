@@ -165,7 +165,7 @@
                   <img class="img-responsive" src="images/upload/<?php echo $row["gambar"]; ?>"  alt="">      
                 </div>
                 <div class="blog-content">
-                  <a href="blog-single1.html"><h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?> </h4></a>
+                  <h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?> </h4>
                   <div class="sub-judul">
                     <div class="date">
                       <p><?php echo $row ["tanggal"] ?></p>
@@ -193,7 +193,7 @@
                   <img class="img-responsive" src="images/upload/<?php echo $row["gambar"]; ?>" alt="">      
                 </div>
                 <div class="blog-content">
-                  <a href="blog-single2.html"><h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?></h4></a>
+                  <h4 class="blog-title"><br/> <?php echo $row ["namaberita"]; ?></h4>
                   <div class="sub-judul">
                     <div class="date">
                       <p><?php echo $row ["tanggal"] ?></p>
