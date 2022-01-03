@@ -11,7 +11,7 @@
     
      //pagination
     //konfigurasi
-    $jumlahdataperhalaman = 5;
+    $jumlahdataperhalaman = 15;
     $jumlahdata = count(query("SELECT * FROM databerita"));
     $jumlahhalaman =ceil($jumlahdata / $jumlahdataperhalaman) ;
     // $halamanaktif = (isset($_GET["halaman"])) ? $_GET["halaman"] : 1; ini cara if elase yang baru

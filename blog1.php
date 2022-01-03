@@ -101,7 +101,8 @@
 
  <!-- Navigation -section
   =========================-->
-<nav class="navbar navbar-fixed-top navigation" >
+
+  <nav class="navbar navbar-fixed-top navigation " >
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -111,12 +112,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand logo" >
-        <img src="images/fff.png" alt="">
+      <a href="index.html" class="navbar-brand navbar-sijine  logo" >
+        <img src="images/White logo 2.png" alt="">
       </a>
-      <a class="navbar-brand navbar-tengah logo" >
+      <a href="https://www.dinamika.ac.id" class="navbar-brand navbar-tengah logo" >
         <img src="images/logo-dinamika1.png" alt="">
       </a>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

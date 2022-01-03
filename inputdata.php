@@ -1,5 +1,14 @@
 <?php
+
+session_start();
+
+   if( !isset($_SESSION["login"])){
+       header("Location: signin.php");
+       exit;
+   }
     require 'function.php';
+
+    
 
     //cek apakah tombol submit sudah di tekan atau belum 
     if(isset($_POST['submit'])){
@@ -16,6 +25,7 @@
         document.location.href = 'cover.php';
     </script>";
     mysqli_error($conn);
+   
     }
 
 
@@ -24,6 +34,7 @@
    
    
 ?>
+
 
 
 <!DOCTYPE html>
@@ -72,7 +83,7 @@
     <link href="cover.css" rel="stylesheet" />
   </head>
   <body class="text-white bgez">
-  <nav class="navbar navbar-expand-lg navbar-dark  "  style=" color: maroon;">
+  <nav class="navbar navbar-expand-lg navbar-dark"  style=" color: maroon;">
       <div class="container">
         <a class="navbar-brand" href="" style=" color: white; font-size: 20px; font-weight: bold;">Halaman Input Data</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -100,11 +111,11 @@
 
     <div class="wrapper">
 			<div class="inner">
-				<form action="">
+				<form action="" method="post" enctype="multipart/form-data">
 					<h3 class="sub-judul judul-bek">Tambah Data</h3>
           <br><br>
 					<label class="form-group" for="namaberita" style=" color: white; font-size: 20px; font-weight: bold;"> Masukkan Nama Berita :
-						<input class="form-control" type="text" name="namaberita" id="namaberita" required>
+						<input class="form-control" type="text" name="namaberita" id="namaberita" required >
 						<!-- <span for="">Masukkan Nama Berita :</span>
 						<span class="border"></span> -->
 					</label>
@@ -133,8 +144,7 @@
 						<!-- <span for="">Masukan deskripsi yang ingin anda ketik :</span>
 						<span class="border"></span> -->
 					</label>
-          <button class="zmdi zmdi-arrow-right" type="submit" name="submit">Tambah Data !
-          </button>
+          <button class="zmdi zmdi-arrow-right" type="submit" name="submit">Tambah Data !</button>
 				</form>
 			</div>
 		</div>
