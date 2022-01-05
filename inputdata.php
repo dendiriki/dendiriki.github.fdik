@@ -1,5 +1,14 @@
 <?php
+
+session_start();
+
+   if( !isset($_SESSION["login"])){
+       header("Location: signin.php");
+       exit;
+   }
     require 'function.php';
+
+    
 
     //cek apakah tombol submit sudah di tekan atau belum 
     if(isset($_POST['submit'])){
@@ -16,6 +25,7 @@
         document.location.href = 'cover.php';
     </script>";
     mysqli_error($conn);
+   
     }
 
 
@@ -24,6 +34,7 @@
    
    
 ?>
+
 
 
 <!DOCTYPE html>
@@ -37,9 +48,11 @@
     <title>Cover Template · Bootstrap v5.1</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/cover/" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="css/styleaku.css">
 
     <style>
 
@@ -60,77 +73,80 @@
           font-size: 3.5rem;
         }
       }
+
+      .bgez {
+        background-color: #eae4e9;
+      }
     </style>
 
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet" />
   </head>
-  <body class="text-white bg-dark">
-  <nav class="navbar navbar-expand-lg navbar-dark  bg-warning shadow-sm">
+  <body class="text-white bgez">
+  <nav class="navbar navbar-expand-lg navbar-dark"  style=" color: maroon;">
       <div class="container">
-        <a class="navbar-brand" href="">halaman Input Data</a>
+        <a class="navbar-brand" href="" style=" color: white; font-size: 20px; font-weight: bold;">Halaman Input Data</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" style=" color: white; font-size: 15px; font-weight: bold;" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="cover.php">List Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="inputdata.php">Input Data</a>
+              <a class="nav-link active" href="inputdata.php">Input Data</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="logout.php">logout</a>
+              <a class="nav-link active" href="logout.php">logout</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
- 
-      <h1>Tambah Data</h1>
-      <div class="container">
-        <div class="row">
-        <div class="col-md-8 blog-content-area">
-      <form action="" method="post" enctype="multipart/form-data">
-          <ul>
-              <li>
-                  <label for="namaberita">Masukkan Nama Berita:</label>
-                  <input class="form-control" type="text" name="namaberita" id="namaberita">
-              </li>
-              <li>
-                  <label for="penulis">Masukkan Nama Penulis:</label>
-                  <input class="form-control" type="text" name="penulis" id="penulis">
-              </li>
-              <li>
-                  <label for="tanggal"> Masukan Tanggal Berita</label>
-                  <input class="form-control" type="text" name="tanggal" id="tanggal">
-              </li>
-              <li>
-                  <label for="gambar">Masukan gambar yang ingin anda tambahkan</label>
-                  <input class="form-control" type="file" name="gambar" id="gambar">
-              </li>
-              <li>
-                  <label for="isiberita">Masukan Berita yang ingin anda ketik</label>
-                  <br>
-                  <textarea class="form-control" name="isiberita" id="isiberita" cols="150" rows="20"></textarea>
-              </li>
-              <br><br>
-              <li>
-              <label for="deskripsi">Masukan deskripsi yang ingin anda ketik</label>
-                  <br>
-                  <textarea class="form-control" name="deskripsi" id="deskripsi" cols="150" rows="10"></textarea>
-            </li>
-            <br><br>
-            <li>
-                <button class="btn btn-primary" type="submit" name="submit">Tambah Data !</button>
-            </li>
-          </ul>
-      </form>
-      </div>
-    
-    </div>
-  
-    </div>
+
+
+
+      <br>
+
+    <div class="wrapper">
+			<div class="inner">
+				<form action="" method="post" enctype="multipart/form-data">
+					<h3 class="sub-judul judul-bek">Tambah Data</h3>
+          <br><br>
+					<label class="form-group" for="namaberita" style=" color: white; font-size: 20px; font-weight: bold;"> Masukkan Nama Berita :
+						<input class="form-control" type="text" name="namaberita" id="namaberita" required >
+						<!-- <span for="">Masukkan Nama Berita :</span>
+						<span class="border"></span> -->
+					</label>
+					<label class="form-group" for="penulis" style=" color: white; font-size: 20px; font-weight: bold;"> Masukkan Nama Penulis :
+						<input type="text" class="form-control" name="penulis" id="penulis" required>
+						<!-- <span for="">Masukkan Nama Penulis :</span>
+						<span class="border"></span> -->
+					</label>
+          <label class="form-group" for="tanggal" style=" color: white; font-size: 20px; font-weight: bold;"> Masukan Tanggal Berita :
+						<input class="form-control" type="text" name="tanggal" id="tanggal" required>
+						<!-- <span for="">Masukan Tanggal Berita :</span>
+						<span class="border"></span> -->
+					</label>
+          <label class="form-group" for="gambar" style=" color: white; font-size: 20px; font-weight: bold;"> Masukan gambar yang ingin anda tambahkan :
+						<input class="form-control" type="file" name="gambar" id="gambar" required>
+						<!-- <span for="">Masukan gambar yang ingin anda tambahkan :</span>
+						<span class="border"></span> -->
+					</label>
+          <label class="form-group" for="isiberita" style=" color: white; font-size: 20px; font-weight: bold;"> Masukan Berita yang ingin anda ketik :
+						<textarea class="form-control" name="isiberita" id="isiberita" cols="150" rows="10" required></textarea>
+						<!-- <span for="">Masukan Berita yang ingin anda ketik :</span>
+						<span class="border"></span> -->
+					</label>
+          <label class="form-group" for="deskripsi" style=" color: white; font-size: 20px; font-weight: bold;"> Masukan deskripsi yang ingin anda ketik :
+          <textarea class="form-control" name="deskripsi" id="deskripsi" cols="150" rows="10" required></textarea>
+						<!-- <span for="">Masukan deskripsi yang ingin anda ketik :</span>
+						<span class="border"></span> -->
+					</label>
+          <button class="zmdi zmdi-arrow-right" type="submit" name="submit">Tambah Data !</button>
+				</form>
+			</div>
+		</div>
   </body>
 </html>
